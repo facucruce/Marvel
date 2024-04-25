@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/home"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ superhero.name }}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-content>
+      <img [src]="superhero.thumbnail" alt="Superhero Thumbnail">
+      <h5>{{'OTHER_INFO' | translate}}</h5>
+      <hr>
+      <p>{{'AMOUNT_OF_COMICS' | translate}} {{ superhero.comicsAvailable }}</p>
+      <p>{{'AMOUNT_OF_SERIES' | translate}} {{ superhero.seriesAvailable }}</p>
+      <p>{{'AMOUNT_OF_STORIES' | translate}} {{ superhero.storiesAvailable }}</p>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
